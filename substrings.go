@@ -16,8 +16,8 @@ func SubSets(s string, acc string, results *[]string) {
 		return
 	}
 
-	SubSets(string(s[1:len(s)]), acc+string(s[0]), sets)
-	SubSets(string(s[1:len(s)]), acc, sets)
+	SubSets(string(s[1:len(s)]), acc+string(s[0]), results)
+	SubSets(string(s[1:len(s)]), acc, results)
 
 }
 
